@@ -2,10 +2,12 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+import heroImage from '../../images/kobenhavnerbilleder-sten-simons.jpg'
 ---
 <MainLayout title="Titel">
 	<article class="">
-		<section class="grid md:grid-cols-5 justify-center align-center content-center p-12 md:p-24 gap-10"><div class="col-span-3"><img src="src/assets/images/kobenhavnerbilleder-sten-simons.jpg" alt=""></div>
+		<section class="grid md:grid-cols-5 justify-center align-center content-center p-12 md:p-24 gap-10"><div class="col-span-3"><Image src={heroImage} alt="billede af bog"></div>
 		<div class="col-span-2 justify-center align-center content-center"><h1 class="md:text-4xl font-bold">Københavnerbilleder - en guide til hipster foto</h1><h1 class="md:text-xl italic">af Sten Simons</h1>
 		<h3 class="text-sm md:text-base pt-8">Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog.
 			 Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter.
